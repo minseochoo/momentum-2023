@@ -1,3 +1,8 @@
+:root {
+  --input-color: rgba(0, 0, 0, 0.3);
+  --transparent: rgba(0, 0, 0, 0);
+}
+
 .hidden {
   display: none;
 }
@@ -19,4 +24,92 @@ body {
   height: 100vh;
   background: no-repeat center;
   background-size: cover;
+}
+
+#clock {
+  font-size: 100px;
+  margin-left: 50px;
+}
+
+#name-input {
+  background-color: var(--transparent);
+  width: 270px;
+  height: 17px;
+  border-radius: 30px;
+  border-style: none;
+  padding: 15px;
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: -20px;
+}
+
+#name-input::placeholder {
+  color: var(--input-color);
+}
+
+#greeting {
+  font-size: 50px;
+  margin-left: 60px;
+  margin-top: -20px;
+}
+
+#log-in {
+  display: none;
+}
+
+#todo-input {
+  background-color: var(--transparent);
+  width: 180px;
+  height: 17px;
+  border-radius: 30px;
+  border-style: none;
+  padding: 15px;
+  font-size: 25px;
+  margin-left: 50px;
+}
+
+#todo-input::placeholder {
+  color: var(--input-color);
+}
+
+#todo-list {
+  margin-left: 40px;
+}
+
+button {
+  border-style: none;
+  background-color: var(--transparent);
+}
+
+ul li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#quote {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  font-size: 20px;
+  font: italic 1.2em "Fira Sans", serif;
+}
+
+#author {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 37px;
+  font-size: 15px;
+  font: italic 1em "Fira Sans", serif;
+}
+
+#weather {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  margin-right: 37px;
+}
+
+#weather span {
+  margin-left: 14px;
 }
