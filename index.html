@@ -9,34 +9,52 @@
   </head>
 
   <body>
-    <h2 id="clock">00:00:00</h2>
-    <form class="hidden" id="login-form">
-      <input
-        id="name-input"
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input id="log-in" type="submit" value="Log In" />
-    </form>
-    <h1 class="hidden" id="greeting"></h1>
-    <form id="todo-form">
-      <input id="todo-input" type="text" placeholder="Write a To Do" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-    </div>
-    <div id="author">
-      <span></span>
-    </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="container">
+      <h2 id="clock">00:00:00</h2>
+      <form class="hidden" id="login-form">
+        <input
+          id="name-input"
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <input id="log-in" type="submit" value="Log In" />
+      </form>
+      <h1 class="hidden" id="greeting"></h1>
+      <form id="todo-form">
+        <input
+          id="todo-input"
+          type="text"
+          placeholder="Write a To Do"
+          required
+        />
+      </form>
+      <ul id="todo-list"></ul>
     </div>
 
+    <div class="container right-side">
+      <div id="right">
+        <div id="quote">
+          <span></span>
+        </div>
+        <div id="author">
+          <span></span>
+        </div>
+
+        <div id="weather">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div id="instagram">
+          <i class="fab fa-instagram"></i>
+          <a href="https://www.instagram.com/01.05.07.49/?igshid=MWI4MTIyMDE%3D"
+            >📷 01.05.07.49</a
+          >
+        </div>
+      </div>
+    </div>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>

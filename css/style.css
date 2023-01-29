@@ -24,6 +24,24 @@ body {
   height: 100vh;
   background: no-repeat center;
   background-size: cover;
+  display: flex;
+}
+
+.right-side {
+  position: relative;
+}
+
+.container {
+  width: 700px;
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  width: 730px;
+  margin-top: 500px;
 }
 
 #clock {
@@ -89,7 +107,7 @@ ul li {
 #quote {
   display: flex;
   justify-content: flex-end;
-  margin-right: 30px;
+  margin-right: 37px;
   font-size: 20px;
   font: italic 1.2em "Fira Sans", serif;
 }
@@ -112,4 +130,16 @@ ul li {
 
 #weather span {
   margin-left: 14px;
+}
+
+#instagram {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 37px;
+}
+
+a {
+  text-decoration-line: none;
+  color: black;
 }
